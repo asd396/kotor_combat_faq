@@ -50,7 +50,7 @@ threat_range_choices <- c(0.05, 0.1) #0.05=20-20, 0.1=19-20
 
 balance_choices <- c(2, 0) #balanced, unbalanced
 
-DEF_ATK <- seq(2, 20, 1)
+DEF_ATK <- seq(-10, 30, 1)
 
 map_mods <- function(myFactors){ #this calculates the bonuses for each feat/style/force
     if(all(myFactors$styles=="Dueling 1")){
@@ -269,7 +269,7 @@ server <- function(input, output) {
         threat_mult=1,
         power_attack=0,
         threat_bonus=0,
-        crit_mult=2,
+        crit_mult=1,
         crit_modifier=0
     )
     
