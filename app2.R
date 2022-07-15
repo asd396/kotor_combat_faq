@@ -125,16 +125,19 @@ map_mods <- function(myFactors){ #this calculates the bonuses for each feat/styl
         myFactors$power_attack <- myFactors$power_attack + 3
         myFactors$modifiers1 <- myFactors$modifiers1-3
         myFactors$modifiers2 <- myFactors$modifiers2-3
+        myFactors$crit_mult <- myFactors$crit_mult + 1
     }
     if(all(myFactors$feats=="Power Attack/Power Blast 2")){
         myFactors$power_attack <- myFactors$power_attack + 7
         myFactors$modifiers1 <- myFactors$modifiers1-3
         myFactors$modifiers2 <- myFactors$modifiers2-3
+        myFactors$crit_mult <- myFactors$crit_mult + 1
     }
     if(all(myFactors$feats=="Power Attack/Power Blast 3")){
         myFactors$power_attack <- myFactors$power_attack + 12
         myFactors$modifiers1 <- myFactors$modifiers1-3
         myFactors$modifiers2 <- myFactors$modifiers2-3
+        myFactors$crit_mult <- myFactors$crit_mult + 1
     }
     if(all(myFactors$force=="Knight Speed")){
         myFactors$n1 <- myFactors$n1+1
